@@ -30,6 +30,9 @@
     <Filter Include="Source Files\Widgets">
       <UniqueIdentifier>{340c4cbb-9bd6-42f1-9182-84e3349d9d78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Widgets">
+      <UniqueIdentifier>{e749af26-3f40-4a74-b304-7b324374eeb8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppMain.cpp">
@@ -50,6 +53,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Application\MediaFoundryApplicationSetting.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Widgets\Dialog\EncodeSettingDialog.hpp">
+      <Filter>Header Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Settings\EncodeSettings.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

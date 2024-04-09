@@ -108,6 +108,8 @@
     <ClInclude Include="include\Application\MediaFoundryApplicationSetting.hpp" />
     <QtMoc Include="include\Application\MediaFoundryApplicationManager.hpp" />
     <QtMoc Include="include\Widgets\QueWidget.hpp" />
+    <ClInclude Include="include\Settings\EncodeSettings.hpp" />
+    <ClInclude Include="include\Widgets\Dialog\EncodeSettingDialog.hpp" />
     <ClInclude Include="include\Widgets\MainWindow.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
