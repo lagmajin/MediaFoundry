@@ -33,11 +33,11 @@
     <Filter Include="Header Files\Widgets">
       <UniqueIdentifier>{e749af26-3f40-4a74-b304-7b324374eeb8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Codec">
+      <UniqueIdentifier>{d1fdb7d0-b0e6-48fa-8f98-22ee9853a8fd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AppMain.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Widgets\MainWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -46,6 +46,9 @@
     </ClCompile>
     <ClCompile Include="src\Widgets\QueWidget.cpp">
       <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppMain.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +63,21 @@
     </ClInclude>
     <ClInclude Include="include\Settings\EncodeSettings.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Codec\H264.hpp">
+      <Filter>Header Files\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Codec\H265.hpp">
+      <Filter>Header Files\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Codec\AbstractCodecSettings.hpp">
+      <Filter>Header Files\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Codec\FFMpegLosslessCodec.hpp">
+      <Filter>Header Files\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Codec\VP9.hpp">
+      <Filter>Header Files\Codec</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

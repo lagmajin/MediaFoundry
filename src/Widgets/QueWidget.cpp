@@ -1,10 +1,11 @@
+#include <QtGui/QDragEnterEvent>
+
 #include "../../include/Widgets/QueWidget.hpp"
 
 
 namespace MediaFoundry {
 
-
- QueWidget::QueWidget()
+ QueWidget::QueWidget(QWidget* parent/*=nullptr*/) :QWidget(parent)
  {
 
  }
@@ -13,5 +14,23 @@ namespace MediaFoundry {
  {
 
  }
+
+ void QueWidget::dragEnterEvent(QDragEnterEvent* event)
+ {
+  
+  
+ }
+
+ void QueWidget::dragMoveEvent(QDragMoveEvent* event)
+ {
+  
+ }
+
+ void QueWidget::dropEvent(QDropEvent* event)
+ {
+  
+ }
+
+ 
 
 };

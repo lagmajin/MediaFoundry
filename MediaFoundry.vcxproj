@@ -19,14 +19,14 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{FAFC8513-99A8-45BB-9250-18D3527AD273}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
-    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.20348.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.20348.0</WindowsTargetPlatformVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>Intel(R) oneAPI DPC++ Compiler 2023</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -99,8 +99,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AppMain.cpp" />
     <ClCompile Include="src\Application\MediaFoundryApplicationManager.cpp" />
+    <ClCompile Include="src\AppMain.cpp" />
     <ClCompile Include="src\Widgets\MainWindow.cpp" />
     <ClCompile Include="src\Widgets\QueWidget.cpp" />
   </ItemGroup>
@@ -108,6 +108,11 @@
     <ClInclude Include="include\Application\MediaFoundryApplicationSetting.hpp" />
     <QtMoc Include="include\Application\MediaFoundryApplicationManager.hpp" />
     <QtMoc Include="include\Widgets\QueWidget.hpp" />
+    <ClInclude Include="include\Codec\AbstractCodecSettings.hpp" />
+    <ClInclude Include="include\Codec\FFMpegLosslessCodec.hpp" />
+    <ClInclude Include="include\Codec\H264.hpp" />
+    <ClInclude Include="include\Codec\H265.hpp" />
+    <ClInclude Include="include\Codec\VP9.hpp" />
     <ClInclude Include="include\Settings\EncodeSettings.hpp" />
     <ClInclude Include="include\Widgets\Dialog\EncodeSettingDialog.hpp" />
     <ClInclude Include="include\Widgets\MainWindow.hpp" />
